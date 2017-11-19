@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">PAN!C</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Actualizar</string>
+
+    <!-- Strings para el slider -->
+    <string name="next">SIGUIENTE</string>
+    <string name="skip">SALTAR</string>
+    <string name="start">COMENZAR</string>
+    <string name="slide_1_title">Mensajes de emergencia</string>
+    <string name="slide_1_desc">Envia mensajes de emergencia con tan solo un botón a un contacto que tu decidas.</string>
+    <string name="slide_2_title">Llamadas rápidas</string>
+    <string name="slide_2_desc">Realiza llamadas con un solo botón hasta a tres contactos diferentes.</string>
+    <string name="slide_3_title">Ante cualquier emergencia</string>
+    <string name="slide_3_desc">Hazlo ante cualquier emergencia</string>
+    <string name="slide_4_title">Cuatro contactos</string>
+    <string name="slide_4_desc">Un contacto para mensaje y otros tres para llamadas de emergencia.</string>
+
+    <!-- Strings para el login y el registro -->
+    <string name="hint_email">Correo</string>
+    <string name="hint_password">Contraseña</string>
+    <string name="hint_name">Nombre completo</string>
+    <string name="btn_login">Iniciar sesión</string>
+    <string name="btn_register">Registrarse</string>
+    <string name="btn_link_to_register">¿No eres miembro? Registrate ahora</string>
+    <string name="btn_link_to_login">¡Ya estas registrado! Inicia sesión</string>
+    <string name="welcome">Bienvenido</string>
+    <string name="btn_logout">Salir</string>
+    <string name="name">Nombre completo</string>
+
+    <string name="informacion">Envía un mensaje de emergencia o realiza una llamada</string>
+
+</resources>

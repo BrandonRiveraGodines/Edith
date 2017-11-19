@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.trabajo.edith.panic.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <ImageButton
+        android:id="@+id/emergencia"
+        android:layout_width="90pt"
+        android:layout_height="90pt"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="82dp"
+        android:background="@mipmap/ic_send_sms" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/informacion"
+        android:id="@+id/Texto"
+        android:textColor="@color/colorAccent"
+        android:autoSizeTextType="uniform"
+        android:textStyle="italic"
+        android:textSize="18dp"
+        android:layout_marginTop="34dp"
+        android:layout_below="@+id/emergencia"
+        android:layout_centerHorizontal="true" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="83dp">
+
+        <Button
+            android:id="@+id/llamada3"
+            android:layout_width="30pt"
+            android:layout_height="30pt"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="14dp"
+            android:layout_marginStart="14dp"
+            android:layout_toEndOf="@+id/llamada2"
+            android:layout_toRightOf="@+id/llamada2"
+            android:background="@mipmap/ic_send_message" />
+
+        <Button
+            android:id="@+id/llamada2"
+            android:layout_width="30pt"
+            android:layout_height="30pt"
+            android:background="@mipmap/ic_send_message"
+            android:layout_alignTop="@+id/llamada1"
+            android:layout_centerHorizontal="true" />
+
+
+        <Button
+            android:id="@+id/llamada1"
+            android:layout_width="30pt"
+            android:layout_height="30pt"
+            android:background="@mipmap/ic_send_message"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/llamada2"
+            android:layout_toStartOf="@+id/llamada2"
+            android:layout_marginRight="14dp"
+            android:layout_marginEnd="14dp" />
+
+    </RelativeLayout>
+</RelativeLayout>

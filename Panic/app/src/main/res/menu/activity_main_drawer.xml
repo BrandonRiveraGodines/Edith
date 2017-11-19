@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_alert"
+            android:icon="@mipmap/ic_principal"
+            android:title="Pantalla principal" />
+        <item
+            android:id="@+id/nav_set"
+            android:icon="@mipmap/ic_update"
+            android:title="Establecer contactos" />
+<!--        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Slideshow" />
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Tools" />-->
+    </group>
+
+    <item android:title="PAN!C">
+        <menu>
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@mipmap/ic_about"
+                android:title="Información" />
+            <item
+                android:id="@+id/nav_exit"
+                android:icon="@mipmap/ic_exit"
+                android:title="Salir" />
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateActivity">
+
+    <ImageView
+        android:id="@+id/emergencia"
+        android:layout_width="30pt"
+        android:layout_height="30pt"
+        android:layout_marginTop="28dp"
+        android:background="@mipmap/ic_send_sms"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/nav_view"
+        android:layout_toEndOf="@+id/nav_view"
+        android:layout_marginLeft="27dp"
+        android:layout_marginStart="27dp" />
+
+    <Button
+        android:id="@+id/setllamada1"
+        android:layout_width="30pt"
+        android:layout_height="30pt"
+        android:background="@mipmap/ic_send_message"
+        android:layout_marginTop="32dp"
+        android:layout_below="@+id/setllamada2"
+        android:layout_alignLeft="@+id/setllamada2"
+        android:layout_alignStart="@+id/setllamada2" />
+
+    <Button
+        android:id="@+id/setllamada2"
+        android:layout_width="30pt"
+        android:layout_height="30pt"
+        android:background="@mipmap/ic_send_message"
+        android:layout_below="@+id/setllamada3"
+        android:layout_alignLeft="@+id/setllamada3"
+        android:layout_alignStart="@+id/setllamada3"
+        android:layout_marginTop="44dp" />
+
+    <Button
+        android:id="@+id/setllamada3"
+        android:layout_width="30pt"
+        android:layout_height="30pt"
+        android:background="@mipmap/ic_send_message"
+        android:layout_below="@+id/emergencia"
+        android:layout_alignLeft="@+id/emergencia"
+        android:layout_alignStart="@+id/emergencia"
+        android:layout_marginTop="35dp" />
+
+    <TextView
+        android:id="@+id/contactNameAzul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/emergencia"
+        android:layout_toRightOf="@+id/setllamada3"
+        android:text="Sin asignar" />
+
+    <TextView
+        android:id="@+id/contactPhoneAzul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/emergencia"
+        android:layout_marginBottom="11dp"
+        android:layout_toEndOf="@+id/setllamada3"
+        android:layout_toRightOf="@+id/setllamada3"
+        android:text="Sin asignar" />
+
+    <TextView
+        android:id="@+id/contactNameVerde"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/contactPhoneVerde"
+        android:layout_alignStart="@+id/contactPhoneVerde"
+        android:layout_alignTop="@+id/setllamada3"
+        android:layout_marginTop="12dp"
+        android:text="Sin asignar" />
+
+    <TextView
+        android:id="@+id/contactPhoneVerde"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/setllamada3"
+        android:layout_toEndOf="@+id/setllamada3"
+        android:layout_toRightOf="@+id/setllamada3"
+        android:text="Sin asignar" />
+
+    <TextView
+        android:id="@+id/contactNameAmarillo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/setllamada2"
+        android:layout_marginTop="22dp"
+        android:layout_toEndOf="@+id/setllamada3"
+        android:layout_toRightOf="@+id/setllamada3"
+        android:text="Sin asignar" />
+
+    <TextView
+        android:id="@+id/contactPhoneAmarillo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/setllamada2"
+        android:layout_alignEnd="@+id/contactNameVerde"
+        android:layout_alignRight="@+id/contactNameVerde"
+        android:text="Sin asignar" />
+
+    <TextView
+        android:id="@+id/contactNameRojo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/contactPhoneAmarillo"
+        android:layout_alignRight="@+id/contactPhoneAmarillo"
+        android:layout_alignTop="@+id/setllamada1"
+        android:layout_marginTop="13dp"
+        android:text="Sin asignar" />
+
+    <TextView
+        android:id="@+id/contactPhoneRojo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/setllamada1"
+        android:layout_toEndOf="@+id/setllamada3"
+        android:layout_toRightOf="@+id/setllamada3"
+        android:text="Sin asignar" />
+
+    <Button
+        android:id="@+id/selectionMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/contactNameAzul"
+        android:layout_marginEnd="23dp"
+        android:layout_marginRight="23dp"
+        android:background="@color/dot_dark_screen4"
+        android:textColor="@color/white"
+        android:text="Elegir contacto" />
+
+    <Button
+        android:id="@+id/selectionCall3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Elegir contacto"
+        android:layout_alignTop="@+id/contactNameRojo"
+        android:layout_alignLeft="@+id/selectionMessage"
+        android:background="@color/dot_dark_screen4"
+        android:textColor="@color/white"
+        android:layout_alignStart="@+id/selectionMessage" />
+
+    <Button
+        android:id="@+id/selectionCall1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Elegir contacto"
+        android:layout_alignBottom="@+id/contactPhoneVerde"
+        android:layout_alignLeft="@+id/selectionCall3"
+        android:background="@color/dot_dark_screen4"
+        android:textColor="@color/white"
+        android:layout_alignStart="@+id/selectionCall3" />
+
+    <Button
+        android:id="@+id/selectionCall2"
+        android:onClick="pickContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Elegir contacto"
+        android:layout_alignBaseline="@+id/contactNameAmarillo"
+        android:layout_alignBottom="@+id/contactNameAmarillo"
+        android:layout_alignLeft="@+id/selectionCall1"
+        android:background="@color/dot_dark_screen4"
+        android:textColor="@color/white"
+        android:layout_alignStart="@+id/selectionCall1" />
+
+    <EditText
+        android:id="@+id/TextoEscrito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/selectionCall1"
+        android:layout_alignLeft="@+id/setllamada1"
+        android:layout_alignRight="@+id/selectionCall1"
+        android:layout_alignStart="@+id/setllamada1"
+        android:layout_below="@+id/setllamada1"
+        android:layout_marginTop="17dp"
+        android:ems="10"
+        android:hint="Escribe el mensaje"
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/Listo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Actualizar"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/contactNameRojo"
+        android:layout_toEndOf="@+id/contactNameRojo" />
+
+</RelativeLayout>
